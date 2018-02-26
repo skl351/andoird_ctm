@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/zuoshangjiao_tanchuan_top"></RelativeLayout>
+    <TextView
+        android:background="@color/white"
+        android:gravity="center"
+        android:id="@+id/cgdd"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="常规订单"/>
+    <TextView
+        android:background="@color/white"
+        android:gravity="center"
+        android:id="@+id/tcdd"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="套餐订单"/>
+    <TextView
+        android:background="@color/white"
+        android:gravity="center"
+        android:id="@+id/dgdd"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="企业清洁"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/zuoshajiao_bot"></RelativeLayout>
+</LinearLayout>

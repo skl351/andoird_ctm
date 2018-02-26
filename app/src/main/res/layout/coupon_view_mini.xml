@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:lar="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+    <com.ayi.zidingyi_view.logandreg
+        android:id="@+id/top"
+        lar:center_text="优惠券"
+        android:layout_width="match_parent"
+        lar:left_but="@drawable/btn_back"
+        android:layout_height="44dp">
+    </com.ayi.zidingyi_view.logandreg>
+
+    <ImageView
+        android:layout_below="@+id/top"
+        android:id="@+id/guodu"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/luebai"/>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:id="@+id/diwe"
+        android:layout_below="@+id/guodu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:id="@+id/saomiaoerweim"
+            android:layout_width="44dp"
+            android:layout_height="44dp">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/saomiao"/>
+        </RelativeLayout>
+
+        <EditText
+
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center_vertical"
+           android:layout_weight="1"
+            android:id="@+id/yhq_str"
+            android:padding="3dp"
+            android:background="@drawable/edit_biankuang_hui2"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:textSize="14sp"
+            android:textColorHint="#a4a5a8"
+            android:hint="请输入优惠券号码"/>
+        <Button
+            android:gravity="center"
+            android:background="@null"
+            android:id="@+id/yhq_duihuan"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="18sp"
+            android:text="兑换"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/guodu2"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/diwe"
+        android:background="@color/luebai"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <TextView
+
+        android:id="@+id/danqian"
+        android:layout_below="@+id/guodu2"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:textSize="16sp"
+        android:text="当前优惠券"/>
+    <ImageView
+        android:id="@+id/guodu3"
+        android:layout_below="@id/danqian"
+        android:background="@color/luebai"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <com.ayi.zidingyi_view.PullToRefreshLayout
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/danqian"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:id="@+id/refresh_view"
+        android:layout_height="match_parent">
+        <include layout="@layout/refresh_head" />
+        <!-- 支持所有实现Pullable接口的View -->
+        <com.ayi.zidingyi_view.PullableGridView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/content_view"
+            android:gravity="center"
+            android:columnWidth="90dp"
+            android:horizontalSpacing="10dp"
+            android:numColumns="1"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp"/>
+
+        <include layout="@layout/load_more" />
+    </com.ayi.zidingyi_view.PullToRefreshLayout>
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/empey_view"
+        android:layout_below="@+id/danqian"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textColor="#a4a5a8"
+            android:textSize="16sp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="没有可用的优惠券"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/click_lishi"
+        android:padding="5dp"
+        android:background="@drawable/edit_biankuang_hui"
+        android:layout_margin="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:text="历史"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="优惠券"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

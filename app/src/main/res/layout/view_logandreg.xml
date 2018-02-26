@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/white">
+    <RelativeLayout
+        android:id="@+id/logreg_left"
+        android:layout_width="50dp"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/logreg_left_nei"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="12dp"
+            android:layout_height="18dp"
+            />
+    </RelativeLayout>
+    <TextView
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="标题"
+        android:textColor="@color/black"
+        android:id="@+id/logreg_center"
+        android:layout_width="160dp"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_centerInParent="true"/>
+    <LinearLayout
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/logreg_right"
+        android:layout_alignParentRight="true"
+        >
+        <TextView
+            android:id="@+id/limian_text"
+            android:padding="10dp"
+            android:layout_marginLeft="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="提交"
+            android:layout_gravity="center"
+            android:textColor="@color/main_green"/>
+
+    </LinearLayout>
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/luebai_3"/>
+
+</RelativeLayout>

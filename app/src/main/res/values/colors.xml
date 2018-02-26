@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="red">#ff0202</color>
+    <color name="light_blue">#6593cb</color>
+    <color name="main_green">#5bb53b</color>
+    <color name="main_line">#dcdcdc</color>
+    <color name="main_orange">#e38918</color>
+    <color name="main_blue">#40765c</color>
+    <color name="touming_color">#00000000</color>
+    <color name="touming_color2">#11000000</color>
+    <color name="touming_color3">#d3d3d3</color>
+    <color name="bg_hui">#F5F3F1</color>
+    <color name="my_gray">#999999</color>
+    <color name="luebai">#c5c5c5</color>
+    <color name="luebai_3">#e5e5e5</color>
+    <color name="luebai2">#f2f2f2</color>
+    <color name="newcolorgray">#f6f6f6</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray">#cccccc</color>
+    <color name="order_gray3">#F2F2F2</color>
+    <color name="gray_3">#fafafa</color>
+    <color name="gray_4">#eaeaea</color>
+    <color name="xiangq_back">#f3f3f3</color>
+    <color name="xiaobule">#01b7e5</color>
+    <color name="percent_text_color_2">#A2CD5A</color>
+    <color name="progressbar_bg_color_1">#737373</color>
+    <color name="progress_color_1">#3CB371</color>
+    <color name="divider">#ffd2d2d2</color>
+
+    <color name="order_gray">#a0a0a0</color>
+
+    <color name="order_black">#010101</color>
+    <color name="order_gray2">#555555</color>
+    <color name="order_red">#ff3600</color>
+    <color name="default_textcolor">#747474</color>
+    <color name="yishouli">#ff7815</color>
+    <color name="daishouli">#333333</color>
+    <color name="order_gra">#808080</color>
+
+    <color name="possible_result_points">#c0ffbd21</color> <!-- Android standard ICS color -->
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_laser">#25a0f5</color> <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#60000000</color>
+
+    <color name="crn0">#25a0f5</color>
+    <color name="f">#ffffff</color>
+    <color name="e5">#e5e5e5</color>
+    <color name="cb9">#999999</color>
+    <color name="wenben_defalut">#757575</color>
+
+</resources>

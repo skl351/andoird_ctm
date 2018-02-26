@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"/>
+
+    <!--<LinearLayout-->
+        <!--android:layout_marginTop="95dp"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="35dp">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_weight="1"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="9dp"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/dot_indicator1"-->
+                <!--android:src="@drawable/dot_focused"-->
+                <!--android:layout_marginRight="8dp"-->
+                <!--android:layout_width="7dp"-->
+                <!--android:layout_height="7dp" />-->
+            <!--<ImageView-->
+                <!--android:id="@+id/dot_indicator2"-->
+                <!--android:src="@drawable/dot_focused"-->
+                <!--android:layout_marginRight="8dp"-->
+                <!--android:layout_width="7dp"-->
+                <!--android:layout_height="7dp" />-->
+            <!--<ImageView-->
+                <!--android:id="@+id/dot_indicator3"-->
+                <!--android:src="@drawable/dot_focused"-->
+                <!--android:layout_marginRight="8dp"-->
+                <!--android:layout_width="7dp"-->
+                <!--android:layout_height="7dp" />-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/dot_indicator4"-->
+                <!--android:src="@drawable/dot_focused"-->
+                <!--android:layout_marginRight="8dp"-->
+                <!--android:layout_width="7dp"-->
+                <!--android:layout_height="7dp" />-->
+
+
+
+        <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+</FrameLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    xmlns:lar="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+    <com.ayi.zidingyi_view.logandreg
+        android:id="@+id/top"
+        lar:center_text="预约时间"
+        android:layout_width="match_parent"
+        lar:left_but="@drawable/btn_back"
+        android:layout_height="44dp">
+    </com.ayi.zidingyi_view.logandreg>
+
+    <ScrollView
+        android:layout_below="@id/top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/flag1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!--第一列-->
+                <LinearLayout
+
+                    android:id="@+id/week_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_margin="4dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/border_week"
+                       android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="请选择\n  日期"/>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+                <!--第二列-->
+                <LinearLayout
+                    android:layout_marginLeft="3dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:background="@drawable/border_week"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <TextView
+                            android:id="@+id/title_text"
+                            android:textSize="18sp"
+                            android:layout_centerInParent="true"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2017-04-10(周一)"/>
+                        <TextView
+                            android:layout_centerInParent="true"
+                            android:layout_below="@id/title_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" "/>
+                    </RelativeLayout>
+
+                    <com.ayi.zidingyi_view.MyGridView
+                        android:id="@+id/week_grid"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:verticalSpacing="1dp"
+                        android:horizontalSpacing="1dp"
+                        android:numColumns="3" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"></LinearLayout>
+            <Button
+                android:text="确认"
+                android:id="@+id/ok"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/button_style"/>
+        </LinearLayout>
+
+    </ScrollView>
+    <RelativeLayout
+        android:visibility="gone"
+        android:clickable="true"
+        android:id="@+id/progressBar1"
+        android:background="@color/touming_color2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:layout_centerInParent="true"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+    </RelativeLayout>
+</RelativeLayout>

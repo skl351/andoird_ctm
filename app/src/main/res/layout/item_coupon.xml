@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:padding="5dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <RelativeLayout
+            android:id="@+id/left"
+            android:background="@mipmap/left_green"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            >
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+
+                    android:text="￥50"
+                    android:id="@+id/price"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:text="优惠券"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/right"
+            android:layout_toRightOf="@id/left"
+            android:background="@drawable/edit_biankuang"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:id="@+id/use_tiaojian_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="使用类型:"/>
+            <TextView
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:id="@+id/use_tiaojian"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/use_tiaojian_left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""/>
+            <LinearLayout
+                android:id="@+id/ygiezz"
+                android:layout_below="@id/use_tiaojian_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_marginLeft="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="使用区域:"
+                    />
+                <TextView
+                   android:layout_marginLeft="3dp"
+                    android:textSize="12sp"
+                    android:id="@+id/area"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@id/ygiezz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_marginLeft="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="有  效  至:"
+                    />
+                <TextView
+                    android:layout_marginLeft="3dp"
+                    android:textSize="12sp"
+                    android:id="@+id/time"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/xuyaoxianshi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#10000000"></RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:visibility="gone"
+        android:background="@mipmap/yiguoqi"
+        android:id="@+id/status"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+
+</RelativeLayout>

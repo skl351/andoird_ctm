@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="1dp"
+        android:id="@+id/templet_header">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Milk"
+            android:id="@+id/templet_header_title"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Left"
+            android:id="@+id/templet_header_txt_btn_left"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone"
+            android:gravity="center_vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Right"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:gravity="center_vertical"
+            android:id="@+id/templet_header_txt_btn_right"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/templet_header_img_btn_left_big"
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_margin="10dp"
+                android:layout_width="12dp"
+                android:layout_height="18dp"
+                android:id="@+id/templet_header_img_btn_left"
+                android:background="@android:color/transparent"
+                android:src="@drawable/btn_back"
+                android:scaleType="fitCenter"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp" />
+        </RelativeLayout>
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/templet_header_img_btn_right"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:visibility="gone"
+            android:id="@+id/templet_header_edit_search"
+            android:singleLine="true"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="65dp"
+            android:layout_marginRight="65dp" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:visibility="gone"
+            android:id="@+id/templet_header_img_btn_search"
+            android:background="@drawable/bg_search_long"
+            android:singleLine="true"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="65dp"
+            android:layout_marginRight="65dp" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/templet_content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/templet_header"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/templet_empty_view"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/templet_header"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="加载失败 \n点击重新加载"
+            android:gravity="center"
+            android:id="@+id/act_templet_empty_tv_msg"
+            android:layout_gravity="center" />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/templet_empty_progress_view"
+            android:layout_gravity="center"
+            android:indeterminate="false" />
+    </FrameLayout>
+
+</RelativeLayout>

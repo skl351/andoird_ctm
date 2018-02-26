@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:lar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <com.ayi.zidingyi_view.logandreg
+            android:id="@+id/top"
+            lar:center_text="服务价格"
+            android:layout_width="match_parent"
+            lar:left_but="@drawable/btn_back"
+            android:layout_height="44dp">
+        </com.ayi.zidingyi_view.logandreg>
+
+
+
+        <ScrollView
+            android:layout_below="@id/top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--套型-->
+                <LinearLayout
+                    android:id="@+id/taox_view"
+                    android:layout_marginTop="3dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp">
+                        <ImageView
+                            android:layout_width="3dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/main_green"/>
+                        <TextView
+                            android:padding="5dp"
+                            android:background="@color/newcolorgray"
+                            android:gravity="center_vertical"
+                            android:text="套型"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"></TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_gravity="center"
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <LinearLayout
+                                   android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="42dp"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="套型"/>
+                                    <LinearLayout
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="42dp"
+                                        android:orientation="vertical">
+                                        <Spinner
+                                            android:id="@+id/taox_spinner"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="40dp"></Spinner>
+                                        <ImageView
+                                            android:visibility="gone"
+                                            android:id="@+id/tiaofu_6_01"
+                                            android:background="@color/gray"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:id="@+id/shijianduan"
+                                android:layout_width="match_parent"
+                                android:layout_height="44dp">
+                                <TextView
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="时段"/>
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+                                    <Spinner
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:layout_marginRight="20dp"
+                                        android:id="@+id/spin_shangwu"
+                                        android:layout_marginLeft="20dp"
+                                        android:layout_width="100dp"
+                                        android:layout_height="40dp">
+                                    </Spinner>
+                                    <ImageView
+                                        android:visibility="gone"
+                                        android:layout_marginLeft="20dp"
+                                        android:id="@+id/tiaofu_6_02"
+                                        android:background="@color/gray"
+                                        android:layout_width="100dp"
+                                        android:layout_height="1dp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <LinearLayout
+                                    android:layout_gravity="center"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:textColor="@color/main_orange"
+                                        android:text="￥"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                    <TextView
+                                        android:id="@+id/taox_money"
+                                        android:textColor="@color/main_orange"
+                                        android:text="100"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                    <TextView
+                                        android:text="/"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                    <LinearLayout
+
+                                        android:id="@+id/bushidanci"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:id="@+id/meici_time"
+                                            android:text="1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content" />
+                                        <TextView
+                                            android:text="小时"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content" />
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:visibility="gone"
+                                        android:id="@+id/danci"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:text="单次价格"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content" />
+
+                                    </LinearLayout>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:gravity="bottom"
+                                    android:layout_gravity="bottom"
+                                    android:id="@+id/slae_vis"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_marginLeft="10dp"
+                                        android:textSize="12sp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="（原价"
+                                        android:id="@+id/textView21" />
+
+                                    <TextView
+                                        android:textSize="12sp"
+
+                                        android:text="￥"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                    <TextView
+                                        android:textSize="12sp"
+                                        android:id="@+id/taox_money2"
+                                        android:text="100.00"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                    <TextView
+                                        android:textSize="12sp"
+                                        android:text="/"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                    <LinearLayout
+                                        android:id="@+id/bushidanci2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:id="@+id/meici_time2"
+                                            android:text="1"
+                                            android:textSize="12sp"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content" />
+                                        <TextView
+                                            android:textSize="12sp"
+                                            android:text="小时）"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content" />
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:visibility="gone"
+                                        android:id="@+id/danci2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:textSize="12sp"
+                                            android:text="单次价格）"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content" />
+
+                                    </LinearLayout>
+                                    <ImageView
+                                        android:id="@+id/image_coupon"
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/taishu_view"
+                    android:layout_marginTop="3dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp">
+                        <ImageView
+                            android:layout_width="3dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/main_green"/>
+                        <TextView
+                            android:padding="5dp"
+                            android:background="@color/newcolorgray"
+                            android:gravity="center_vertical"
+                            android:text="套型"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"></TextView>
+                    </LinearLayout>
+                    <LinearLayout
+
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:id="@+id/make_food"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RelativeLayout
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/breakfast1"
+                                android:layout_centerInParent="true"
+                                android:layout_width="61dp"
+                                android:layout_height="36dp"
+                                android:background="@drawable/breakfast_select"/>
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/lunch2"
+                                android:layout_centerInParent="true"
+                                android:layout_width="61dp"
+                                android:layout_height="36dp"
+                                android:background="@drawable/lunch_select"/>
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/dinner2"
+                                android:layout_centerInParent="true"
+                                android:layout_width="61dp"
+                                android:layout_height="36dp"
+                                android:background="@drawable/dinner_select"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <RelativeLayout
+
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+                        <LinearLayout
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="服务价格"/>
+                            <LinearLayout
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+                                <LinearLayout
+                                    android:gravity="center_vertical"
+                                    android:layout_weight="1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="早餐："/>
+                                    <TextView
+                                        android:id="@+id/breakfast_text"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="0.00"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="元/次"/>
+                                    <LinearLayout
+                                        android:visibility="gone"
+                                        android:id="@+id/slae_vis_zao"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_marginLeft="10dp"
+                                            android:textSize="12sp"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="（原价"
+                                            android:id="@+id/textView21_z" />
+                                        <TextView
+                                            android:textSize="12sp"
+                                            android:id="@+id/taox_money2_z"
+                                            android:text="0.00"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content" />
+                                        <TextView
+                                            android:textSize="12sp"
+                                            android:text="元"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content" />
+                                        <TextView
+                                            android:textSize="12sp"
+                                            android:text="/"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content" />
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:textSize="12sp"
+                                                android:text="次）"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content" />
+                                        </LinearLayout>
+                                        <ImageView
+                                            android:id="@+id/image_coupon_z"
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"/>
+                                    </LinearLayout>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:gravity="center_vertical"
+                                    android:layout_weight="1"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="中餐："/>
+                                    <TextView
+                                        android:id="@+id/lunch_text"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="0.00"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="元/次"/>
+                                    <LinearLayout
+                                        android:visibility="gone"
+                                        android:id="@+id/slae_vis_zhong"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_marginLeft="10dp"
+                                            android:textSize="12sp"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="（原价"
+                                            android:id="@+id/textView21_zhong" />
+                                        <TextView
+                                            android:textSize="12sp"
+                                            android:id="@+id/taox_money2_zhong"
+                                            android:text="100.00"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content" />
+                                        <TextView
+                                            android:textSize="12sp"
+                                            android:text="元"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content" />
+                                        <TextView
+                                            android:textSize="12sp"
+                                            android:text="/"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content" />
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:textSize="12sp"
+                                                android:text="次）"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content" />
+                                        </LinearLayout>
+                                        <ImageView
+                                            android:id="@+id/image_coupon_zhong"
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"/>
+                                    </LinearLayout>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:gravity="center_vertical"
+                                    android:layout_weight="1"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="晚餐："/>
+                                    <TextView
+                                        android:id="@+id/dinner_text"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="0.00"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="元/次"/>
+                                    <LinearLayout
+                                        android:visibility="gone"
+                                        android:id="@+id/slae_vis_wan"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_marginLeft="10dp"
+                                            android:textSize="12sp"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="（原价"
+                                            android:id="@+id/textView21_w" />
+                                        <TextView
+                                            android:textSize="12sp"
+                                            android:id="@+id/taox_money2_w"
+                                            android:text="0.00"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content" />
+                                        <TextView
+                                            android:textSize="12sp"
+                                            android:text="元"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content" />
+                                        <TextView
+                                            android:textSize="12sp"
+                                            android:text="/"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content" />
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:textSize="12sp"
+                                                android:text="次）"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content" />
+                                        </LinearLayout>
+                                        <ImageView
+                                            android:id="@+id/image_coupon_w"
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"/>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <!--长期保洁-->
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/center_content_cqbj">
+
+                    <TextView
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="请您根据房屋面积或所需的工作时长进行选择下单。" />
+                    <TextView
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="服务内容：" />
+                    <TextView
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  卧室、客厅、餐厅、阳台、厨房、卫生间清洁" />
+
+                    <TextView
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="用户须知：" />
+                    <TextView
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  ◆至少提前4个小时预订" />
+                    <TextView
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  ◆距离订单开始2小时后，不允许变更服务时间" />
+                    <TextView
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  ◆此订单对应同一服务地址" />
+
+                </LinearLayout>
+                <!--做饭-->
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/center_content_zf">
+                    <TextView
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="服务说明:" />
+                    <TextView
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  ◆服务时长:2小时" />
+                    <TextView
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  ◆服务内容:2菜1汤" />
+                    <TextView
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  ◆适合用餐人数:2-4人" />
+                    <TextView
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="用户须知：" />
+                    <TextView
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  ◆根据菜品难易程度耗时长短不同，在完成订单固定菜品的基础上，若需增加菜品耗时两小时内，需再下一单。" />
+
+                    <TextView
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  ◆食材需用户自行采购" />
+                    <TextView
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  ◆只提供中式家常菜服务，如需其它菜系请另行说明" />
+                    <TextView
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  ◆请至少提前一天预定服务" />
+
+                </LinearLayout>
+                <Button
+                    android:visibility="invisible"
+                    android:text="提交"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_style_old" />
+            </LinearLayout>
+        </ScrollView>
+        <Button
+            android:id="@+id/button_btn"
+            android:textColor="@color/white"
+            android:text="提交"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_style_old" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:visibility="gone"
+        android:clickable="true"
+        android:id="@+id/progressBar1"
+        android:background="@color/touming_color2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:layout_centerInParent="true"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+    </RelativeLayout>
+
+</FrameLayout>

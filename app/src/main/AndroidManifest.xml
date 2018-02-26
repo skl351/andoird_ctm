@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ayi">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_ASSISTED_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <application
+        android:name=".AyiApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="t1zCa2SVbfFKaK1vpgQqaTqB7tvegZOG" />
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"></service>
+
+        <activity
+            android:name="cn.finalteam.rxgalleryfinal.ui.activity.MediaActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".order_four.Big_pic2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home_page.More_project"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Voice_setting"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="simplezxing.activity.CaptureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home_page.Service_type_modify_zdg"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home_page.Service_type_adg_modify_cq"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".utils.Web_view_guyong"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".zidingyi_view.web_view_info"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".order_four.Big_pic"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home_page.Coupon_delite"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home_page.Coupon_nouse"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home_page.Coupon_mini"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home_page.Order_pay_tc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home_page.Map_search_edit"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home_page.Coupon"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".order_four.service_info"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home_page.Ayi_list_item"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home_page.Ayi_list_new"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home_page.Ayi_list_2_new"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home_page.Business_appointment_tc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".home_page.Home_zdg_cq_ok"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".home_page.Home_yuesao_ok"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".home_page.Home_baomu_ok"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".home_page.Home_zdg_ok"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".order_four.Pingjia_jiemian"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".home_page.User_info"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home_page.User_info_before"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home_page.Zdg_time_select"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home_page.Other_time_select"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home_page.Other_last2_time_select"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home_page.Suishoudai"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home_page.Suishoudai_thing"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".utils.Web_view"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home_page.Order_pay"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".order_four.Service_detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home_page.Combo"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home_page.Business_appointment"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".home_page.Map_search"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".order_four.Order_one_detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".order_four.Order_two_detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".order_four.Order_four_detail"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="login"
+                    android:scheme="ayi" />
+            </intent-filter>
+        </activity>
+
+
+        <!--程序主路口-->
+        <activity
+            android:name=".activity.AyiSplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".zidingyi_view.laun_activity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".home_page.Home_daike_guodu"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".home_page.Home_daike_guodu2"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="index"
+                    android:scheme="ayi" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.UpdateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/backgroudDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="update"
+                    android:scheme="ayiadmin" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ServiceDescriptionActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="servicedesc"
+                    android:scheme="ayi" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.RechargeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="wxaa3fb8979e3eeae7" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ShareActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wxaa3fb8979e3eeae7" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.StartActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.WebViewActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="timeselect"
+                    android:scheme="ayi" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <receiver android:name=".retrofit.AppRegister">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="56e4d59a67e58e065f00140b"></meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Umeng" />
+
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+        <activity
+            android:name=".fragment.ceshi_download"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

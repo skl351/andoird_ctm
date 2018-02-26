@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:lar="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+    <com.ayi.zidingyi_view.logandreg
+        android:id="@+id/top"
+        lar:center_text="优惠券详情"
+        android:layout_width="match_parent"
+        lar:left_but="@drawable/btn_back"
+        android:layout_height="44dp">
+    </com.ayi.zidingyi_view.logandreg>
+
+    <RelativeLayout
+        android:background="@color/luebai2"
+        android:layout_width="match_parent"
+        android:layout_height="10dp">
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="优惠券面值："/>
+        <TextView
+            android:textSize="18sp"
+            android:id="@+id/use_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥30.00"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="使 用 类 型 ："/>
+        <TextView
+            android:textSize="18sp"
+            android:id="@+id/use_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日常保洁"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="使 用 区 域 ："/>
+        <TextView
+            android:textSize="18sp"
+            android:id="@+id/user_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="宁波"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="有    效    至："/>
+        <TextView
+            android:textSize="18sp"
+            android:id="@+id/use_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-11-30"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="使 用 规 则 ："/>
+
+    </LinearLayout>
+    <TextView
+        android:textSize="18sp"
+        android:id="@+id/use_role"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" 1.在有效期内使用\n
+2.使用区域非全国的，只能在指定城市(或区域)内使用\n
+3.本公司保留对优惠券的最终解释权"/>
+
+
+</LinearLayout>

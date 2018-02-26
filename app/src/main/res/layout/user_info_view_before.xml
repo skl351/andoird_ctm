@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:lar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    <com.ayi.zidingyi_view.logandreg
+        android:id="@+id/top"
+        lar:center_text="服务地址"
+        android:layout_width="match_parent"
+        lar:left_but="@drawable/btn_back"
+        android:layout_height="44dp">
+    </com.ayi.zidingyi_view.logandreg>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <TextView
+            android:id="@+id/guanli"
+            android:padding="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="管理"/>
+    </RelativeLayout>
+
+        <ListView
+            android:divider="@color/touming_color2"
+            android:dividerHeight="5dp"
+            android:layout_marginBottom="50dp"
+            android:layout_below="@id/top"
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:id="@+id/add_address_click"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/addadress"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新增服务地址"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

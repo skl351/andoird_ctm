@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/divider"/>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+
+       <RelativeLayout
+           android:layout_weight="1"
+           android:id="@+id/zuobian"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <LinearLayout
+
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+
+               android:orientation="vertical">
+
+               <TextView
+                   android:textColor="@color/black"
+                   android:id="@+id/item_title"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="5dp"
+                   android:padding="5dp"
+                   android:text="初体验-家务包年" />
+
+               <ImageView
+                   android:adjustViewBounds="true"
+                   android:layout_marginLeft="15dp"
+                   android:id="@+id/item_img"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" />
+           </LinearLayout>
+           <TextView
+               android:visibility="gone"
+               android:id="@+id/hot_text"
+               android:layout_marginRight="-57dp"
+               android:layout_marginTop="14dp"
+               android:gravity="center"
+               android:background="@color/red"
+               android:layout_alignParentRight="true"
+               android:rotation="45"
+               android:textColor="@color/white"
+               android:layout_width="150dp"
+               android:layout_height="15dp"
+               android:text=""
+               android:textSize="10sp"/>
+       </RelativeLayout>
+
+       <LinearLayout
+           android:gravity="bottom"
+           android:layout_alignTop="@id/zuobian"
+           android:layout_alignBottom="@id/zuobian"
+           android:layout_alignParentRight="true"
+           android:layout_width="wrap_content"
+           android:layout_height="100dp"
+           android:orientation="vertical">
+           <LinearLayout
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="10dp"
+               android:id="@+id/biaozhi1"
+               android:gravity="right"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+               <TextView
+                   android:textColor="@color/main_green"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="￥" />
+               <TextView
+                   android:textColor="@color/main_green"
+                   android:id="@+id/price1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="468" />
+           </LinearLayout>
+           <TextView
+               android:gravity="center"
+               android:id="@+id/now_click"
+               android:textColor="@color/white"
+               android:text="立即预约"
+               android:layout_width="80dp"
+               android:layout_height="44dp"
+               android:background="@drawable/button_style_old"
+               android:layout_centerVertical="true"
+               android:layout_centerHorizontal="true" />
+       </LinearLayout>
+   </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"/>
+</LinearLayout>

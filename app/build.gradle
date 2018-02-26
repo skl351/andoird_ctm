@@ -1,0 +1,109 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+    sourceSets {
+        main {
+            jniLibs.srcDir 'libs'
+        }
+
+        // Move the tests to tests/java, tests/res, etc...
+        instrumentTest.setRoot('tests')
+        // Move the build types to build-types/<type>
+        // For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
+        // This moves them out of them default location under src/<type>/... which would
+        // conflict with src/ being used by the main source set.
+        // Adding new build types or product flavors should be accompanied
+        // by a similar customization.
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+    defaultConfig {
+        applicationId "com.ayi"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 49
+        versionName "4.23"
+        multiDexEnabled true
+        //2017-12-14 46  4.20
+        //2018-01-12 47  4.21
+        //2018-01-23 48  4.22
+        //2018-2/1 49  4.23
+
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            zipAlignEnabled true
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    signingConfigs {
+        debug {
+            keyAlias 'sangeayi'
+            keyPassword 'zZ123456789'
+            storeFile file('D:\\xiangmuqianmin\\sangeayi.jks')
+            storePassword 'zZ123456789'
+        }
+        releaseConfig {
+            keyAlias 'sangeayi'
+            keyPassword 'zZ123456789'
+            storeFile file('D:\\xiangmuqianmin\\sangeayi.jks')
+            storePassword 'zZ123456789'
+        }
+
+    }
+    productFlavors {
+        umeng {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "umeng"]
+        }
+        sgay {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "sgay"]
+        }
+        xiaomi {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "xiaomi"]
+        }
+        yingyongbao {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "yingyongbao"]
+        }
+        _360 {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "360"]
+        }
+        huawei {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "huawei"]
+        }
+        anzhi {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "anzhi"]
+        }
+        wandoujia {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "wandoujia"]
+        }
+        oppo {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "oppo"]
+        }
+        vivo {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "vivo"]
+        }
+        meizu {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "meizu"]
+        }
+    }
+
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile 'com.bigkoo:pickerview:2.0.8'
+    compile 'com.baoyz.actionsheet:library:1.1.5'
+    compile 'com.qiniu:qiniu-android-sdk:7.0.+'
+    compile project(':baselib')
+    compile project(':library')
+    compile 'cn.finalteam.rxgalleryfinal:library:0.0.3'
+    compile 'com.github.pinguo-zhouwei:CustomPopwindow:2.0.0'
+
+}

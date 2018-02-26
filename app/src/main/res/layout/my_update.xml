@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:cb="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/tv2"
+            android:adjustViewBounds="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/update_view_img"/>
+        <ImageView
+            android:layout_margin="10dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/update_delte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btu_off"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_below="@id/tv2"
+            android:layout_margin="16dip"
+            android:inputType="textMultiLine"
+            android:text="111111111111111111dddddddddddddddddddddddddddddddddddddd11cccccccccccccccccccccccccc111111111111111111111111111111111111111111111"
+            android:textColor="#ff909090"
+            android:textSize="16.0sp" />
+
+        <RelativeLayout
+            android:layout_marginRight="5dp"
+android:layout_marginLeft="5dp"
+            android:id="@+id/ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/content"
+            android:layout_marginBottom="10.0dip"
+            android:orientation="vertical">
+
+            <!--<ProgressBar-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:id="@+id/progress"-->
+                <!--style="?android:attr/progressBarStyleHorizontal"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="10.0dip"-->
+                <!--android:layout_marginLeft="10.0dip"-->
+                <!--android:layout_marginRight="10.0dip" />-->
+            <com.ayi.zidingyi_view.CBProgressBar
+                android:id="@+id/progress"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_gravity="center_horizontal"
+                cb:isHorizonStroke="true"
+                cb:orientation="horizontal"
+                cb:percent_text_color="@color/percent_text_color_2"
+                cb:percent_text_size="@dimen/percent_text_size_large"
+                cb:progressBarBgColor="@color/progressbar_bg_color_1"
+                cb:progressColor="@color/progress_color_1"
+                cb:rect_round="@dimen/horizontal_corner" />
+            <TextView
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:id="@+id/shuzhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="0.0%"
+                android:textColor="#ff909090" />
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:adjustViewBounds="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/update_back"/>
+
+           <Button
+               android:id="@+id/btu_on"
+                android:layout_centerInParent="true"
+               android:textColor="@color/white"
+               android:background="@drawable/edit_biankuang_update"
+               android:layout_width="120dp"
+               android:layout_height="30dp"
+               android:text="立即升级"/>
+
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/btu_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="10sp"
+                android:textColor="@color/white"
+                android:text="当前版本："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/dangqian_banben"
+                android:textSize="10sp"
+                android:textColor="@color/white"
+                android:text="1111"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
